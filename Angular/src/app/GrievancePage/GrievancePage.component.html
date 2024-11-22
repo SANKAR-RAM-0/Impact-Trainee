@@ -1,0 +1,41 @@
+<body>
+  <div class="container">
+    <h1>Complaint Form</h1>
+    <div class="content">
+      <form>
+        <div class="complaint-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" name="name" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <span><b>Complaint Detail's</b></span><br><br>
+            <span class="details">Incident date</span>
+            <input type="date" name="date">
+          </div>
+          <div class="input-box">
+            <span class="details">Invoice Number</span>
+            <input type="text" name="invoice" placeholder="Enter the invoice number">
+          </div>
+          <div class="input-box">
+            <span class="details">Complaint description</span>
+            <span class="detail">Please describe the complaint that you would like to report. Be as specific as possible to make the explanation clear. </span>
+            <textarea name="description" cols="95" rows="4"></textarea>
+          </div>
+          <div class="input-box">
+            <span class="details">The desired outcome</span>
+            <span class="detail">As a result of making this complaint, is there any outcome you would like?</span>
+            <input type="text" name="outcome" placeholder="If there is any">
+          </div>
+          <div class="input-image">
+            <span class="details">Would you like to share a file or image regarding your complaint?</span><br><br>
+            &nbsp;&nbsp;&nbsp; <input type="file" name="image">
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

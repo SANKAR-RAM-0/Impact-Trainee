@@ -1,0 +1,44 @@
+<body>
+<div class="container">
+<div class="title">Welcome Back!!</div>
+<div class="content">
+
+<form [formGroup]="loginForm" >
+
+<div class="user-details">
+
+<div class="input-box">
+  <label for="">Email</label>
+  <input type="text" name="email"  formControlName="email" placeholder="Enter your email" class="form-control">
+  <div *ngIf="loginForm.controls['email'].invalid&&loginForm.controls['email'].touched">
+    <small *ngIf="loginForm.controls['email'].errors?.['required']">Please enter your email</small>
+    <small *ngIf="loginForm.controls['email'].errors?.['email']">Enter a valid email address</small>
+</div></div>
+
+<div class="input-box">
+  <label for="">Password</label>
+  <input type="text" name="password"  formControlName="password" placeholder="Enter your password" class="form-control">
+  <div *ngIf="loginForm.controls['password'].invalid&&loginForm.controls['password'].touched">
+    <small *ngIf="loginForm.controls['password'].errors?.['required']">Please enter your password</small>
+</div></div>
+
+<div class="forgotpassword">
+  <a href="">Forgot Password?</a>
+</div>
+
+<div class="button">
+  <input type="button" value="Login">
+</div>
+
+<br><br>
+<div class="register">
+  <p>New User? <a routerLink="/register">Sign Up!!</a></p></div>
+  <br><br>
+
+</div>
+</form>
+</div>
+</div>
+
+</body>
+

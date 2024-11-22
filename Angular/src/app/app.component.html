@@ -1,0 +1,39 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="/Icons/Logo.png">
+  </head>
+  <body>
+
+
+<nav>
+  <ul class="dropdown">
+    <div class="logo">
+      <a routerLink="Home"><img *ngFor="let image of images" src="{{image.logo}}"></a>
+      </div>
+    <li><a routerLink="Home">Home</a></li>
+    <li><a routerLink="Grievance filling page">Grievance filling page</a></li>
+    <li><a routerLink="ContactUs">Contact us</a></li>
+    <li><a routerLink="Login">Login</a></li>
+    </ul>
+  </nav>
+
+<router-outlet></router-outlet>
+
+
+<footer>
+  <div class="footer-content">
+    <h3>E-Store Complaint Management System</h3>
+  <p>Handling customer complaints is easy now. This helps you receive, respond to, and resolve customer grievances with simple solutions, and leaves you with more time for tasks that matter.</p>
+  <ul class="socials">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© Copyright - 2023 E-Store Complaint Management System</p>
+  </div>
+
+  </footer>
+    </body>

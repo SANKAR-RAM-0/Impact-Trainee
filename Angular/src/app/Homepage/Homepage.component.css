@@ -1,0 +1,72 @@
+.heading1 h2 {
+  font-size: 1.01cm;
+  margin-top: 8%;
+  margin-bottom: -1px;
+  padding: 0px;
+  animation-name: heading;
+  animation-duration: 0.9s;
+}
+.heading1 p {
+  margin-left: 16%;
+  width: 80%;
+  font-size: larger;
+  animation-name: heading;
+  animation-duration: 1s;
+}
+.heading1{
+  margin-bottom: 4%;
+  padding-bottom: 5%;
+}
+@keyframes heading {
+  from {transform: translateX(-100px); visibility: visible;}
+  to {transform: translateX(0); visibility: visible;}
+}
+.head-image{
+  width: 40%;
+  float: left;
+  display: block;
+  margin-top: -120px;
+}
+
+.how-to{
+  background-color: white;
+  margin-top: 140px;
+  padding:20px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+.how-to h2{
+  text-shadow: 1px black;
+  margin-left: 80px;
+}
+.how-to p {
+  margin-left: 90px;
+  font-size: larger;
+}
+.how-to-image {
+  width: 45%;
+  float: right;
+  display: block;
+  margin-right: -20px;
+  margin-top: -70px;
+}
+
+
+.heading3 h2 {
+  margin-top: 8%;
+}
+.heading3 p li{
+  font-size: larger;
+}
+.heading3 {
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+.head3-image{
+  width: 41%;
+  float: left;
+  display: block;
+  margin-top: -150px;
+  margin-right: 40px;
+}
+

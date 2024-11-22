@@ -1,0 +1,74 @@
+<body>
+<br><br><br><br>
+<div class="container">
+<div class="title">Sign Up</div>
+<div class="content">
+
+<form [formGroup]="registerForm" (submit)="onSubmit()">
+
+<div class="user-details">
+
+<div class="input-box">
+<label for="">First Name</label>
+<input type="text" name="fname" formControlName="fname" placeholder="Enter your first name">
+<div *ngIf="registerForm.controls['fname'].invalid && submitted">
+  <small *ngIf="registerForm.controls['fname'].errors?.['required']">* Please enter your first name</small>
+  <small *ngIf="registerForm.controls['fname'].errors?.['minlength']">* First name should be atleast 4 characters</small>
+</div></div>
+
+
+
+<div class="input-box">
+<label for="">Last Name</label>
+<input type="text" name="lname" formControlName="lname" placeholder="Enter your last name">
+<div *ngIf="registerForm.controls['lname'].invalid && submitted">
+  <small *ngIf="registerForm.controls['lname'].errors?.['required']">* Please enter your last name</small>
+  <small *ngIf="registerForm.controls['lname'].errors?.['minlength']">* Last name should be atleast 4 characters</small>
+</div></div>
+
+<div class="input-box">
+<label for="">Email</label>
+<input type="text" name="email" formControlName="email"  placeholder="Enter your email">
+<div *ngIf="registerForm.controls['email'].invalid && submitted">
+  <small *ngIf="registerForm.controls['email'].errors?.['required']">* Please enter your email</small>
+  <small *ngIf="registerForm.controls['email'].errors?.['email']">* Enter a valid email address</small>
+</div></div>
+
+<div class="input-box">
+<label for="">Phone Number</label>
+<input type="text" name="phoneno" formControlName="phoneno" placeholder="Enter your number">
+<div *ngIf="registerForm.controls['phoneno'].invalid && submitted">
+  <small *ngIf="registerForm.controls['phoneno'].errors?.['required']">* Please enter your phone number</small>
+  <small *ngIf="registerForm.controls['phoneno'].errors?.['minlength']">* Enter a valid phone number</small>
+  <small *ngIf="registerForm.controls['phoneno'].errors?.['maxlength']">* Enter a valid number it should not contain more than 10 numbers</small>
+</div></div>
+
+<div class="input-box">
+<label for="">Password</label>
+<input type="text" name="password" formControlName="password" placeholder="Enter your password">
+<div *ngIf="registerForm.controls['password'].invalid && submitted">
+  <small *ngIf="registerForm.controls['password'].errors?.['required']">* Please enter your password</small>
+  <small *ngIf="registerForm.controls['password'].errors?.['minlength']">* Please enter password with atleast 6 characters</small>
+</div></div>
+
+<div class="input-box">
+<label for="">Confirm password</label>
+<input type="text" name="cpassword" formControlName="cpassword" placeholder="Confirm your password">
+  <small *ngIf="registerForm.controls['cpassword'].errors?.['confirmedValidator'] && submitted">*Please enter confirm password matching with the password field</small>
+</div>
+</div>
+
+<div class="button">
+  <button><span>Register</span></button>
+</div>
+
+<div class="Link">
+<p>Already have an account? <a routerLink="/Login">Login!</a></p>
+</div>
+</form>
+</div>
+</div>
+</body>
+
+
+

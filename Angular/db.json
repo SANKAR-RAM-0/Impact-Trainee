@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [{
+    "name": "typicode"
+  } ],
+  "images": [
+    {
+      "logo": "assets/img/Logo.png"
+    },
+    {
+      "head": "assets/img/img-1.png"
+    },
+    {
+      "head1": "assets/img/img-2.jpg"
+    },
+    {
+      "head2": "assets/img/img-3.jpg"
+    }
+  ]
+
+}
